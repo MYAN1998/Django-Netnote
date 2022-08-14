@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改文章</title>
+</head>
+<body>
+<form action="/note/mod/?id={{ note.id }}" method="post">
+    标题: <input type="text" name="title" value="{{ note.title }}">
+    <input type="submit" value="修改"><br>
+    内容: <br>
+    <textarea name="content" id="" cols="39" rows="20">{{ note.content }}</textarea>
+</form>
+</body>
+</html>
